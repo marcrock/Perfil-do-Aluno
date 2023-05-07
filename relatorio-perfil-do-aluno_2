@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <title>Relatório do Perfil da Turma</title>
+    <link rel="stylesheet" href="relatorio-do-perfil-da-turma.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Relatório do Perfil da Turma</h1>
+      <form action="seu_script_de_processamento.php" method="post">
+        <table>
+          <tbody>
+            <tr>
+              <td><strong>Escola:</strong></td>
+              <td><input type="text" name="escola" required></td>
+              <td><strong>Coordenador:</strong></td>
+              <td><input type="text" name="coordenador" required></td>
+            </tr>
+            <tr>
+              <td><strong>Diretor:</strong></td>
+              <td><input type="text" name="diretor" required></td>
+              <td><strong>Professor(a):</strong></td>
+              <td><input type="text" name="professor" required></td>
+            </tr>
+            <tr>
+              <td colspan="2"><strong>Turma:</strong></td>
+              <td colspan="2"><input type="text" name="turma" required></td>
+            </tr>
+          </tbody>
+        </table>
+        <table>
+          <tbody>
+            <tr>
+              <td><strong>Alunos:</strong></td>
+              <td><input type="number" name="num_alunos" required></td>
+              <td><strong>Média de Idade:</strong></td>
+              <td><input type="number" name="media_idade" required></td>
+            </tr>
+          </tbody>
+        </table>
+        <h2>Desempenho da Turma</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Disciplina</th>
+              <th>Média das Notas</th>
+              <th>Distribuição das Notas</th>
+              <th>Taxa de Absenteísmo</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><input type="text" name="disciplina" required></td>
+              <td><input type="number" name="media_notas" required></td>
+              <td><input type="text" name="distribuicao_notas" required></td>
+              <td><input type="number" name="taxa_absenteismo" required></td>
+            </tr>
+          </tbody>
+        </table>
+        <p><strong>Outras Informações Relevantes:</strong></p>
+        <textarea name="outras_informacoes" rows="5"></textarea>
+        <h2>Análise Individual</h2>
+        <!-- Repita este bloco para cada aluno -->
+        <h3><input type="text" name="nome_aluno" required></h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Área de Conhecimento</th>
+              <th>Objetos de Conhecimento</th>
+              <th>Habilidades</th>
+              <th>Desenvolvimento</th>
+                        <th>Necessidade de Apoio</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input type="text" name="area_conhecimento" required></td>
+          <td><input type="text" name="objetos_conhecimento" required></td>
+          <td><input type="text" name="habilidades" required></td>
+          <td><input type="text" name="desenvolvimento" required></td>
+          <td><input type="text" name="necessidade_apoio" required></td>
+        </tr>
+      </tbody>
+    </table>
+    <p><strong>Sugestões:</strong></p>
+    <textarea name="sugestoes" rows="5"></textarea>
+    <!-- Fim do bloco -->
+    <div class="footer">
+      <img src="[URL DA LOGO]" alt="Logo da Escola">
+      <p>[NOME DA ESCOLA]</p>
+      <p>[ENDEREÇO DA ESCOLA]</p>
+    </div>
+    <input type="submit" value="Enviar">
+  </form>
+</div>
