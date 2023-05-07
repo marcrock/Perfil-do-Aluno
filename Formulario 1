@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <title>Relatório do Perfil da Turma</title>
+    <style>
+      /* Estilos para o formulário */
+      form {
+        max-width: 800px;
+        margin: 0 auto;
+        font-family: Arial, sans-serif;
+      }
+      label {
+        display: block;
+        margin-top: 20px;
+      }
+      input[type="text"],
+      input[type="number"] {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+        font-size: 16px;
+      }
+      input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
+      }
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Relatório do Perfil da Turma</h1>
+    <form>
+      <h2>Dados da Turma</h2>
+      <label>Nome da Turma:</label>
+      <input type="text" name="nomeTurma">
+      <label>Professor:</label>
+      <input type="text" name="nomeProfessor">
+      <label>Número de Alunos:</label>
+      <input type="number" name="numAlunos">
+      <label>Idade Média dos Alunos:</label>
+      <input type="number" name="idadeMedia">
+      <h2>Desempenho da Turma</h2>
+      <label>Média de Notas:</label>
+      <input type="number" name="mediaNotas">
+      <label>Distribuição de Notas:</label>
+      <input type="text" name="distribuicaoNotas">
+      <label>Taxa de Absenteísmo:</label>
+      <input type="number" name="taxaAbsenteismo">
+      <label>Outras Informações Relevantes:</label>
+      <input type="text" name="outrasInformacoes">
+      <h2>Análise Individual</h2>
+      <!-- Repita este bloco para cada aluno -->
+      <h3>Aluno 1</h3>
+      <label>Nome:</label>
+      <input type="text" name="aluno1Nome">
+      <label>Notas:</label>
+      <input type="text" name="aluno1Notas">
+      <label>Participação em Sala de Aula:</label>
+      <input type="text" name="aluno1Participacao">
+      <label>Necessidades de Apoio:</label>
+      <input type="text" name="aluno1Apoio">
+      <label>Sugestões:</label>
+      <input type="text" name="aluno1Sugestoes">
+      <!-- Fim do bloco -->
+      <input type="submit" value="
