@@ -67,6 +67,16 @@ td:first-child {
   text-align: left;
 }
 
+th:first-child,
+td:first-child {
+  width: 30%;
+}
+
+th:not(:first-child),
+td:not(:first-child) {
+  width: 20%;
+}
+
 .footer {
   margin-top: 50px;
   text-align: center;
