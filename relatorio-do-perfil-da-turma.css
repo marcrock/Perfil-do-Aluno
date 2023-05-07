@@ -78,3 +78,8 @@ img {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+textarea[name="outras_informacoes"],
+textarea[name="sugestoes"] {
+  width: 100%;
+  box-sizing: border-box;
+}
